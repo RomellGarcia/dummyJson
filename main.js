@@ -23,6 +23,8 @@ const mostrarProductos = (productos) => {
                     <div class="nombre-producto">${producto.title}</div>
                     <div class="categoria-producto">${producto.category}</div>
                     <div class="precio-producto">$${producto.price}</div>
+                    <div>Descuent: ${producto.discountPercentage}%</div>
+                    <div>Marca: ${producto.brand}</div>
                     <div>Rating: ${producto.rating}</div>
                 </div>
             </div>`
