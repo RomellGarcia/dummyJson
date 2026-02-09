@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Catalogo de Productos AliExpress</h1>
+    </header>
+
+    
+    <div class="contenedor-formulario">
+        <h1>Alta nuevos productos</h1>
+
+        <div class="form-group">
+            <label>Nombre del producto:</label>
+            <input type="text" id="titulo" placeholder="Nombre del producto...">
+        </div>
+
+        <div class="form-group">
+            <label>Precio ($): </label>
+            <input type="number" id="precio" placeholder="Precio del producto...">
+        </div>
+
+        <div class="form-group">
+            <label>Categoría:</label>
+            <select id="categoria">
+            <option value="">Cargando categorías...</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label>Descripción:</label>
+            <textarea id="descripcion" rows="4" placeholder="Descripción del producto"></textarea>
+        </div>
+
+        <div class="botones-formulario">
+            <button class="btn-back" onclick="window.location.href='index.html'">Volver</button>
+            <button onclick="crearProducto()">Guardar</button>
+        </div>
+
+        <div id="mensaje-exito"></div>
+    </div>
+
+    <script src="crearproducto.js"></script>
+
+    <footer>
+        <p>Hecho por Romell Garcia Reyes</p>
+    </footer>
+</body>
+</html>

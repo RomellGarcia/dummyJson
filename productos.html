@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Administrar Producto</h1>
+    </header>
+
+    <main>
+        <div class="Agregar">
+            <button onclick="window.location.href='index.html'">Volver al catalogo</button>
+            <Button onclick="window.location.href='add.html'">Agregar Producto</Button>
+            <p></p>
+        </div>
+    </main>
+
+    <main>
+        <div class="contenedor-tabla">
+            <div class="header-tabla">
+                <h2>Lista de Productos</h2>
+            </div>
+
+            <table id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Imagen</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla"></tbody>
+            </table>
+        </div>
+        <div class="paginacion">
+    <button id="btnAnterior">Anterior</button>
+    <span id="infoPagina">Página 1</span>
+    <button id="btnSiguiente">Siguiente</button>
+</div>
+
+    </main>
+    <footer>
+        <p>Hecho por Romell Garcia Reyes</p>
+    </footer>
+
+    <script src="producto.js"></script>
+</body>
+
+</html>

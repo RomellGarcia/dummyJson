@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-     <header>
+    <header>
         <h1>Catalogo de Productos AliExpress</h1>
     </header>
 
@@ -17,9 +19,25 @@
             <button id="botonBuscar">Buscar</button>
         </div>
 
+        <div class="Agregar">
+            <Button onclick="window.location.href='add.html'">Agregar Producto</Button><p></p>
+            <button onclick="window.location.href='productos.html'">Administrar productos</button>
+        </div>
+
+
+        <select id="selectCategoria">
+            <option value="">Todas las categorías</option>
+        </select>
+
         <div id="contenedorProductos" class="cuadricula-productos"></div>
 
         <div id="cargando" class="cargando"></div>
+
+        <div id="paginacion" class="paginacion">
+            <button id="botonAnterior">Anterior</button>
+            <p id="paginaActual">Página 1 de 1</p>
+            <button id="botonSiguiente">Siguiente</button>
+        </div>
     </main>
 
     <footer>
